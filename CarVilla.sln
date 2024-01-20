@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarVilla", "CarVilla.csproj", "{2F926359-67EE-4111-A44A-62A29C0B7F9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F926359-67EE-4111-A44A-62A29C0B7F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F926359-67EE-4111-A44A-62A29C0B7F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F926359-67EE-4111-A44A-62A29C0B7F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F926359-67EE-4111-A44A-62A29C0B7F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6524595-DD7E-47F1-B446-A15BA0AA9EFC}
+	EndGlobalSection
+EndGlobal
