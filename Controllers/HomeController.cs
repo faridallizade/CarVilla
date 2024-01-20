@@ -19,7 +19,7 @@ namespace CarVilla.Controllers
         public async Task<IActionResult> Index()
         {
             List<Product> product = await _context.products.ToListAsync();
-            return View();
+            return View(product);
         }
 
     }

@@ -17,7 +17,6 @@ namespace CarVilla
             opt.UseSqlServer(builder.Configuration.GetConnectionString("default")));
             builder.Services.AddIdentity<AppUser,IdentityRole>(options =>
             {
-                // Default Password settings.
                 options.Password.RequireDigit = true;
                 options.Password.RequireLowercase = true;
                 options.Password.RequireNonAlphanumeric = false;
@@ -37,9 +36,13 @@ namespace CarVilla
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
+            app.MapControllerRoute(
+            name: "areas",
+            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+          );
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

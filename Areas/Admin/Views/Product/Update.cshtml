@@ -1,0 +1,24 @@
+﻿@using CarVilla.Areas.ViewModels;
+@model UpdateProductVm;
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Fruit name</label>
+        <input asp-for="Name" type="text" class="form-control" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Fruit name</label>
+        <input asp-for="Description" type="text" class="form-control" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label">Category name</label>
+        <input asp-for="Price" type="text" class="form-control" aria-describedby="emailHelp">
+    </div>
+    <div class="input-group mb-3">
+        <label asp-for="ImageFile" class="input-group-text">Upload an Image</label>
+        <input asp-for="ImageFile" type="file" class="form-control">
+    </div>
+
+    <div style="color:red" asp-validation-summary=All></div>
+
+    <button asp-action="Update" asp-controller="Product" type="submit" class="btn btn-primary">Create</button>
+</form>
